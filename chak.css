@@ -1,0 +1,70 @@
+.mainBody {
+    background-color: #4CAF50; 
+    padding: 20px;
+}
+
+.main-text {
+    max-width: 70%; /* Ensure the box takes up a similar width as other elements */
+    margin: 40px auto; /* Center the box and add vertical spacing */
+    padding: 40px 100px; /* 40px top/bottom, 70px left/right */
+    border: 2px solid #ccc;
+    border-radius: 8px; /* Smooth edges for a clean look */
+    background-color: #388E3C; /* Keep the green background */
+    color: white; /* Ensure readability */
+    text-align: center; /* Align text to the center */
+    direction: rtl; /* Maintain right-to-left text alignment */
+    line-height: 1.8; /* Improve line spacing */
+    font-size: 1.1rem; /* Set font size for readability */
+}
+
+.main-text li {
+    margin-bottom: 8px; /* Add spacing between list items */
+    text-indent: 0; /* Prevent text from indenting */
+}
+.main-text ul {
+    list-style: none; /* Completely removes bullet points */
+}
+.main-text ul {
+    list-style: none; /* Completely removes bullet points */
+    padding-left: 0; /* Removes left padding */
+    margin: 0; /* Removes any extra margin */
+}
+.main-text h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center; /* מרכז את הכותרת */
+}
+
+.team {
+    max-width: 70%; 
+    margin: 20px auto; 
+}
+
+.team .row {
+    margin-bottom: 20px; 
+    border: 2px solid #ccc;
+    border-radius: 8px; 
+    padding: 10px; 
+    background-color: #81C784;
+}
+
+.team img {
+    max-width: 60%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.team .col-md-6 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 15px; 
+    color: white;
+}
+
+.team h5 {
+    margin-bottom: 10px; 
+    text-align: center; 
+    font-size: 1.25rem; 
+}

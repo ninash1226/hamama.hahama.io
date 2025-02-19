@@ -1,0 +1,101 @@
+body {
+    margin: 0; /* הגדרת מרווח חיצוני  של הגוף ל-0 */
+    font-family: Arial, sans-serif; /* הגדרת גופן ברירת מחדל של הדף */
+    background-color: #134418; /* צבע רקע  */
+    background-image: url('/img/background.png'); /* תמונת רקע */
+    background-size: cover; /* התאמת גודל תמונת הרקע כך שתכסה את כל השטח */
+    background-repeat: no-repeat; /* מניעת חזרה של תמונת הרקע */
+    min-height: 100vh; /* גובה מינימלי של הדף - גובה המסך כולו */
+}
+
+.main {
+    text-align: center; /* יישור טקסט למרכז */
+    color: rgb(251, 251, 251); /* צבע טקסט  */
+    margin-top: 120px; /* מרווח עליון של 120 פיקסלים */
+}
+
+/* עיצוב כותרות */
+.main .text h1 {
+    font-size: 4rem; /* גודל גופן של הכותרת הראשית */
+    font-weight: bold; /* גופן מודגש */
+    color: #e607ed; /* צבע טקסט סגול */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* צללית לכותרת בצבע שחור עם שקיפות */
+    font-family: 'Courier New', Courier, monospace; /* גופן מסוג מונוספייס */
+    margin-bottom: 10px; /* מרווח תחתון של 10 פיקסלים */
+}
+
+.main .text h3 {
+    font-size: 2rem; /* גודל גופן לכותרת משנה */
+    color: rgb(240, 244, 225); /* צבע טקסט בגוון - */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* צללית קלה לכותרת משנה */
+}
+
+/* עיצוב תחתית */
+.foter .help {
+    position: fixed; /* מיקום קבוע בתחתית הדף */
+    bottom: 10px; /* מרחק של 10 פיקסלים מתחתית הדף */
+    left: 20px; /* מרחק של 20 פיקסלים מהצד השמאלי */
+}
+
+.foter .help i {
+    font-size: 2rem; /* גודל אייקון */
+    color: #c016ac; /* צבע סגול כהה */
+    cursor: pointer; /* מצביע העכבר משתנה ליד אייקון */
+}
+
+.foter .help i:hover {
+    color: #ea0d0d; /* שינוי צבע האייקון לאדום כשהעכבר מעליו */
+}
+
+.foter .icons {
+    position: fixed; /* מיקום קבוע בתחתית הדף */
+    bottom: 10px; /* מרחק של 10 פיקסלים מתחתית הדף */
+    right: 20px; /* מרחק של 20 פיקסלים מהצד הימני */
+    display: flex; /* תצוגה גמישה ליישור האייקונים */
+    gap: 12px; /* מרווח של 12 פיקסלים בין האייקונים */
+}
+
+.foter .icons a {
+    font-size: 2rem; /* גודל האייקון */
+    color: #c016ac; /* צבע האייקון סגול כהה */
+}
+
+.foter .icons a:hover {
+    color: white; /* שינוי צבע האייקון ללבן כשהעכבר מעליו */
+}
+
+/* עיצוב חלונית עזרה */
+#help-container {
+    display: none; /* הסתרת חלונית העזרה כברירת מחדל */
+    position: fixed; /* מיקום קבוע במרכז הדף */
+    top: 50%; /* מיקום במרכז האנכי של הדף */
+    left: 50%; /* מיקום במרכז האופקי של הדף */
+    transform: translate(-50%, -50%); /* מיקום מדויק במרכז עם תרגום */
+    background-color: rgba(255, 255, 255, 0.95); /* רקע לבן עם שקיפות קלה */
+    border-radius: 10px; /* פינות מעוגלות של החלונית */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צללית לחלונית */
+    z-index: 1000; /* עדיפות גבוהה להופעת החלונית מעל אלמנטים אחרים */
+    padding: 20px; /* ריווח פנימי של 20 פיקסלים */
+}
+
+.help-box textarea {
+    width: 100%; /* רוחב מלא של חלונית העזרה */
+    height: 100px; /* גובה של 100 פיקסלים */
+    margin: 10px 0; /* מרווח אנכי של 10 פיקסלים */
+    border: 1px solid #ccc; /* מסגרת בצבע אפור בהיר */
+    border-radius: 5px; /* פינות מעוגלות */
+}
+
+.help-box button {
+    margin: 5px; /* מרווח חיצוני של 5 פיקסלים */
+    padding: 8px 12px; /* ריווח פנימי של 8 פיקסלים אנכית ו-12 פיקסלים אופקית */
+    background-color: #1d7c51; /* צבע רקע ירוק כהה */
+    color: white; /* צבע טקסט לבן */
+    border: none; /* ללא מסגרת */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* שינוי מצביע העכבר */
+}
+
+.help-box button:hover {
+    background-color: #14853f; /* צבע רקע ירוק כהה יותר כשהעכבר מעל הכפתור */
+}

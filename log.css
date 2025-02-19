@@ -1,0 +1,132 @@
+
+body {
+    background: linear-gradient(to bottom, #1b2b00, #3a5701, #2a752a); /* יוצר רקע עם מעבר צבעים ירוקים */
+    min-height: 100vh; /* גובה מינימלי של 100% מגובה המסך */
+    display: flex; /* מציב את האלמנטים בתצוגה גמישה */
+    justify-content: center; /* ממרכז את התוכן אופקית */
+    align-items: center;/* ממרכז את התוכן אנכית */
+    margin: 0;/* מסיר שוליים ברירת מחדל */
+    font-family: 'Assistant', Arial, sans-serif;/* מגדיר גופן ברירת מחדל */
+    padding: 20px; /* רווח פנימי סביב התוכן */
+    box-sizing: border-box; /* כולל את השוליים והפדינג בחישוב הגודל הכולל */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);/* רקע לבן שקוף למחצה */
+    padding: 20px;  /* רווח פנימי */
+    border-radius: 15px;  /* פינות מעוגלות */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);/* צל מסביב */
+    max-width: 450px;  /* רוחב מקסימלי */
+    width: 100%;/* מתאים את הרוחב לגודל ההורה */
+    direction: rtl;/* כיוון טקסט מימין לשמאל */
+    box-sizing: border-box;/* כולל שוליים ופדינג בגודל הכולל */
+    transform: scale(0.9);/* מקטין את האלמנט ב-10% */
+}
+
+
+h1, h2 {
+    text-align: center; /* מרכז את הכותרות */
+    color: #324f00;/* צבע טקסט ירוק כהה */
+    font-weight: bold; /* הופך את הטקסט למודגש */
+    margin-bottom: 20px; /* רווח תחתון */
+    font-size: 1.6rem; /* גודל טקסט */
+}
+
+
+.btn {
+    background-color: #425d0c;/* צבע רקע ירוק כהה */
+    color: #ffffff; /* צבע טקסט לבן */
+    width: 100%;/* כפתור בגודל מלא */
+    border: none;/* מסיר מסגרת ברירת מחדל */
+    padding: 16px; /* ריווח פנימי */
+    font-size: 1.1rem; /* גודל טקסט */
+    border-radius: 8px;  /* פינות מעוגלות */
+    margin-bottom: 15px; /* רווח תחתון */
+    box-sizing: border-box;/* כולל שוליים ופדינג בגודל הכולל */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* אנימציה לשינוי רקע וגודל */
+}
+
+.btn:hover {
+    background-color: #556b2f;/* משנה צבע רקע כשמרחפים */
+}
+
+
+.form-control {
+    width: 100%;/* שדה בגודל מלא */
+    padding: 14px; /* ריווח פנימי */
+    margin-bottom: 15px; /* רווח תחתון */
+    border: 1px solid #6b8e23;/* מסגרת ירוקה */
+    border-radius: 10px;  /* פינות מעוגלות */
+    font-size: 1.1rem; /* גודל טקסט */
+    box-sizing: border-box;/* כולל שוליים ופדינג בגודל הכולל */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;  /* אנימציה לשינוי מסגרת וצל */
+}
+
+
+.btn-primary {
+    background-color: #556b2f;  /* צבע רקע ירוק כהה */
+    color: #ffffff;/* צבע טקסט לבן */
+    border: none; /* מסיר מסגרת ברירת מחדל */
+    padding: 16px;  /* ריווח פנימי */
+    width: 100%;/* כפתור בגודל מלא */
+    font-size: 1.1rem; /* גודל טקסט */
+    border-radius: 8px;  /* פינות מעוגלות */
+    transition: background 0.3s ease, transform 0.2s ease;  /* אנימציה לשינוי רקע וגודל */
+}
+
+.btn-primary:hover {
+    background-color: #6b8e23;  /* משנה צבע רקע כשמרחפים */
+}
+
+.window_login, .window_signup {
+    background-color: rgba(255, 255, 255, 0.95); /* רקע לבן כמעט אטום */
+    padding: 25px; /* ריווח פנימי */
+    border-radius: 15px;  /* פינות מעוגלות */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* צל מסביב */
+    box-sizing: border-box; /* כולל שוליים ופדינג בגודל הכולל */
+}
+
+.alert {
+    display: none;/* מסתיר את האלמנט כברירת מחדל */
+    color: #721c24;/* צבע טקסט אדום כהה */
+    background-color: #f8d7da;/* רקע אדמדם בהיר */
+    border-color: #f5c6cb;/* צבע מסגרת אדום בהיר */
+    padding: 14px;  /* ריווח פנימי */
+    border-radius: 8px; /* פינות מעוגלות */
+    text-align: center;/* מרכז את הטקסט */
+    font-size: 1.1rem; /* גודל טקסט */
+    margin-top: 12px; /* רווח עליון */
+    box-sizing: border-box; /* כולל שוליים ופדינג בגודל הכולל */
+}
+
+
+.plant {
+    display: flex; /* מסדר אלמנטים בשורה */
+    justify-content: space-between;/* רווח שווה בין האלמנטים */
+    gap: 12px; /* מרווח בין האלמנטים */
+}
+
+.plant button {
+    flex: 1;/* כל כפתור יתפוס מקום שווה */
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px; /* ריווח פנימי גדול יותר */
+        max-width: 100%; /* רוחב מלא */
+    }
+
+    h1, h2 {
+        font-size: 1.4rem;  /* גודל טקסט קטן יותר */
+    }
+
+    .btn, .form-control, .btn-primary {
+        padding: 12px;  /* ריווח פנימי קטן יותר */
+        font-size: 1rem;  /* גודל טקסט קטן יותר */
+    }
+
+    .alert {
+        font-size: 1rem; /* גודל טקסט קטן יותר */
+    }
+}

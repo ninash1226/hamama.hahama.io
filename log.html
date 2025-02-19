@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/log.css">
+    <title>התחברות / הרשמה</title>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-database-compat.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="plant">
+            <button id="id_bth_login" class="btn" onclick="showLoginForm()">התחברות</button>
+            <button id="id_bth_signup" class="btn" onclick="showSignupForm()">יצירת חשבון</button>
+        </div>
+
+     
+        <div id="id_login" class="window_login" style="display: none;">
+            <form id="login-form">
+                <h2 class="text-center">התחבר</h2>
+                <input id="logemail" class="form-control" type="email" placeholder="מייל" required>
+                <input id="logpassword" class="form-control" type="password" placeholder="סיסמא" required>
+                <div id="alert-login" class="alert">שגיאה בהתחברות</div>
+                <button type="button" class="btn btn-primary" onclick="logUser()">התחבר</button>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="id_signup" class="window_signup" style="display: none;">
+            <form id="signup-form">
+                <h2 class="text-center">צור חשבון</h2>
+                <input id="username" class="form-control" type="text" placeholder="שם משתמש" required>
+                <input id="email" class="form-control" type="email" placeholder="מייל" required>
+                <input id="password" class="form-control" type="password" placeholder="סיסמא" required>
+                <input id="confirm-password" class="form-control" type="password" placeholder="אימות סיסמא" required>
+                <div id="alert-signup" class="alert">שגיאה בהרשמה</div>
+                <button type="button" class="btn btn-primary" onclick="saveUser()">צור חשבון</button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/log.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+body{
+    background: linear-gradient(to bottom, #2d882d, #3a5701,#1b2b00);     /* מגדיר רקע עם מעבר צבע ליניארי מלמעלה למטה */
+    padding-bottom: 20px;    /* מוסיף רווח תחתון של 20px */
+}
+.search-container {
+    display: flex;     /* הופך את המכולה לגמישה ומרכז את התוכן */
+    justify-content: center;
+    padding: 20px;     /* מוסיף רווח פנימי של 20px */
+}
+
+.search-input {
+    width: 300px;    /* מגדיר רוחב של 300px עבור שדה החיפוש */
+    padding: 10px;    /* מוסיף רווח פנימי של 10px */
+    font-size: 16px;    /* מגדיר גודל גופן של 16px */
+    border: 1px solid #ccc;    /* מוסיף גבול אפור בעובי 1px */
+    border-radius: 5px;    /* מעגל את הפינות של השדה */
+}
+
+.search-button {
+    padding: 10px 20px;    /* מגדיר רווח פנימי אופקי של 20px ואנכי של 10px */
+    font-size: 16px;    /* מגדיר גודל גופן של 16px */
+    background-color: #0e4a10;    /* מגדיר רקע ירוק כהה */
+    color: white;    /* מגדיר צבע טקסט לבן */
+    border: none;    /* מבטל את גבולות הכפתור */
+    border-radius: 5px;    /* מעגל את הפינות של הכפתור */
+    margin-left: 10px;    /* מוסיף רווח משמאל לכפתור */
+}
+
+.search-button:hover {
+    background-color: #117216;    /* משנה את צבע הרקע לירוק בהיר כאשר מרחפים על הכפתור */
+}
+
+.grid-container {
+    display: flex;    /* הופך את המכולה לגמישה עם עטיפה */
+    flex-wrap: wrap;
+    gap: 13px;    /* מוסיף רווח בין האלמנטים */
+    justify-content: center;    /* ממרכז את האלמנטים */
+    max-width: 1800px;    /* מגביל את רוחב המכולה ל-1800px */
+}
+.grid-container .card{
+    direction: rtl;     /* מגדיר כיוון טקסט מימין לשמאל */
+    text-align: center;    /* ממרכז את הטקסט */
+    border: 1px solid #131212;     /* מוסיף גבול שחור בעובי 1px */
+    border-radius: 10px;    /* מעגל את הפינות */
+    display: block;    /* מציג את האלמנט כבלוק */
+    transition: background-color 1s ease, box-shadow 1s ease;    /* מוסיף אנימציה לשינוי צבע רקע וצל */
+}
+.highlight {
+    background-color: rgba(153, 152, 152, 0.8);     /* מגדיר רקע רך בצבע לבן שקוף */
+    border: 2px solid #0e4a10;     /* מוסיף גבול ירוק עדין */
+    border-radius: 10px;     /* מעגל את הפינות */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);     /* מוסיף צל רך */
+}
+.grid-container .card .card-img-top{
+        /* מעגל את הפינות העליונות של התמונה */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.grid-container .card .card-body{
+    padding: 15px;     /* מוסיף רווח פנימי של 15px */
+}
+.modal {
+    display: none;    /* מגדיר את המודאל כהתחלה מוסתר */
+    background-color: rgba(15, 60, 25, 0.7);     /* מוסיף רקע כהה חצי שקוף */
+    justify-content: center;    /* ממרכז את התוכן אנכית ואופקית */
+    align-items: center;
+}
+.modal-content {
+    margin-top: 40px;    /* מוסיף רווח עליון של 40px */
+    background: white;    /* מגדיר רקע לבן */
+    padding: 17px;    /* מוסיף רווח פנימי */
+    border-radius: 5px;    /* מעגל את הפינות */
+    max-width: 600px;    /* מגביל את הרוחב ל-600px */
+    text-align: center;    /* ממרכז את הטקסט */
+    direction: rtl;    /* מגדיר כיוון טקסט מימין לשמאל */
+
+}
+.close-button {
+    position: absolute;    /* מגדיר את מיקום הכפתור */
+    top: 11px;
+    right: 24px;
+    font-size: 33px;    /* מגדיר גודל גופן */
+    font-weight: bold;    /* מגדיר טקסט מודגש */
+    color: #cf0000;    /* מגדיר צבע אדום */
+}
+
+.modal img {
+    max-width: 100%;    /* מגביל את רוחב התמונה ל-100% */
+    height: 270px;     /* מגדיר גובה קבוע */
+    object-fit: cover;     /* שומר על פרופורציות התמונה */
+    border-radius: 10px;    /* מעגל את הפינות */
+    margin-bottom: 15px;    /* מוסיף רווח תחתון */
+}
+
+
+.modal ul {
+    list-style-type: none;    /* מבטל את הסמנים של הרשימה */
+    direction: rtl;     /* מגדיר כיוון מימין לשמאל */
+}
+.modal ul li {
+    font-size: 18px;    /* מגדיר גודל גופן של 18px */
+    color: #070707;    /* מגדיר צבע טקסט שחור */
+    margin-top: 10px;    /* מוסיף רווח מעל ומתחת לפריטים */
+    margin-bottom: 10px;
+}
+
+body {
+    background: linear-gradient(to bottom, #2d882d, #3a5701, #1b2b00);
+    padding-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0e4a10;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #117216;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    justify-content: center;
+    max-width: 1800px;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid #131212;
+    border-radius: 10px;
+    transition: background-color 1s ease, box-shadow 1s ease;
+    cursor: pointer;
+    background: white;
+    padding: 15px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 60, 25, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 17px;
+    border-radius: 5px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 11px;
+    right: 24px;
+    font-size: 33px;
+    font-weight: bold;
+    color: #cf0000;
+    cursor: pointer;
+}
+
+.modal img {
+    max-width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.modal ul {
+    list-style-type: none;
+}
+
+.modal ul li {
+    font-size: 18px;
+    color: #070707;
+    margin: 10px 0;
+}
+

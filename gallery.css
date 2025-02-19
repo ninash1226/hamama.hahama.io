@@ -1,0 +1,70 @@
+body{
+    background: linear-gradient(to bottom, #2d882d, #3a5701, #1b2b00);    /* מגדיר רקע עם מעבר צבע ליניארי מלמעלה למטה */
+    background-attachment: fixed;    /* מגדיר שהרקע יישאר קבוע כאשר גוללים את הדף */
+}
+
+.grid-container {
+    padding-top: 25px;    /* מוסיף רווח עליון של 100px */
+    display: flex;    /* הופך את המכולה לגמישה עם עטיפה */
+    flex-wrap: wrap;   
+    gap: 25px;    /* מגדיר רווח בין האלמנטים */
+    justify-content: center;    /* ממרכז את האלמנטים אופקית */
+    align-items: center;    /* ממרכז את האלמנטים אנכית */
+    max-width: 1800px;    /* מגביל את רוחב המכולה ל-1800px */
+    margin-bottom: 20px;    /* מוסיף רווח תחתון של 20px */
+}
+
+.grid-container .card{
+    padding: 40px 10px 10px 10px;    /* מוסיף רווח פנימי של 10px לכל כרטיס */
+    direction: rtl;    /* מגדיר כיוון טקסט מימין לשמאל */
+    text-align: center;    /* ממרכז את הטקסט */
+    border: 1px solid #131212;    /* מוסיף גבול שחור בעובי 1px */
+    border-radius: 10px;    /* מעגל את הפינות של הכרטיס */
+    height: 400px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* רווח בין הכפתורים */
+    width: 100%;
+}
+
+.button-container button {
+    flex: 1 1 calc(50% - 10px); /* כל כפתור תופס חצי מרוחב השורה */
+    max-width: 48%; /* מגביל את הרוחב כך שישאר רווח קטן */
+    text-align: center;
+    height: 40px; /* גובה אחיד לכפתורים */
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 15px; /* ריווח בין קבוצות כפתורים */
+}
+
+.text-1{
+    padding-bottom: 28px;    /* מוסיף רווח תחתון של 22px */
+}
+
+.text-2{
+    padding-bottom: 27px;
+}
+
+.text-3{
+    padding-bottom: 26px;    /* מוסיף רווח תחתון של 27px */
+}
+
+
+

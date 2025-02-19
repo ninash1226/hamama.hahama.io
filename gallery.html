@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <title>Gallery</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #06280d;">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img src="/img/logo2.png" style="width: 1.5rem;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="/homeA.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/aboutA.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/aboutB.html">LOGOUT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="grid-container d-flex justify-content-center flex-wrap mt-4">
+    <div class="card m-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">חיישן אור</h5>
+        <p>חיישן האור מראה לנו את כמות האור אשר הצמח נחשף אליו.</p>
+        <p class="text-1">כמות האור שצמח חשוף עליו:</p>
+        <div class="button-container">
+          <div class="button-row">
+              <button class="btn btn-primary btn-light-off">כיבוי הנורה</button>
+              <button class="btn btn-primary btn-light-low">לאור חלש</button>
+          </div>
+          <div class="button-row">
+              <button class="btn btn-primary btn-light-mid">לאור בינוני</button>
+              <button class="btn btn-primary btn-light-high">לאור חזק</button>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="card m-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">חיישן לחות אדמה</h5>
+        <p>חיישן לחות האדמה מראה את רמת הלחות באדמה.</p>
+        <p class="text-3">רמת הלחות באדמה:</p>
+        <div class="button-continer">
+          <div class="button-row">
+            <button class="btn btn-primary btn-open">פתיחת דלת</button>
+            <button class="btn btn-primary btn-closed">סגירת דלת</button>
+          </div>
+          <div class="button-row">
+            <button class="btn btn-primary btn-stop">עצירת הדלת</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card m-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">חיישן גובה מים</h5>
+        <p>חיישן גובה מים מראה את גובה המים במכל אשר נמצאים המים להשקיית הצמח.</p>
+        <p class="text-2">גובה המים:</p>
+        <div class="button-continer">
+          <div class="button-row">
+            <button class="btn btn-primary btn-fan-on">הפעלה מאוורר</button>
+          </div>
+          <div class="button-row">
+            <button class="btn btn-primary btn-fan-off">לכיבוי המאוורר </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-database-compat.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/js/gallery.js"></script>
+</body>
+</html>

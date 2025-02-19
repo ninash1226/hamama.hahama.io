@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/homeB.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #06280d; padding:0%;">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="/img/logo2.png" style="width: 1.5rem;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse bd-highlight" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item p-2 bd-highlight">
+              <a class="nav-link active" href="/aboutB.html">ABOUT</a>
+            </li>
+            <li class="nav-item p-2 bd-highlight">
+              <a class="nav-link active" href="/exemple.html">EXAMPLE</a>
+            </li>
+            <li class="nav-item p-2 bd-highlight">
+              <a class="nav-link active" href="/log.html">LOGIN/SIGNIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mainBody">
+      <div class="main">
+        <div class="text">
+          <h1>חממה חכמה</h1>
+          <h3>הדרך הכי טובה לגדל צמחים</h3>
+        </div>
+      </div>
+    </div>
+    <div class="foter">
+      <div class="help">
+        <i class="fas fa-question-circle" onclick="askForHelp()" aria-label="עזרה"></i>
+      </div>
+      <div class="icons">
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- חלונית עזרה -->
+    <div id="help-container">
+      <div class="help-box">
+        <h3>עזרה</h3>
+        <textarea id="help-text" placeholder="כתוב כאן את הבעיה שלך..."></textarea>
+        <button onclick="submitHelp()">שלח</button>
+        <button onclick="closeHelp()">סגור</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/help.js"></script>
+  </body>
+</html>

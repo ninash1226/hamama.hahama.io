@@ -1,0 +1,69 @@
+Body {
+    background: linear-gradient(to bottom, #2d882d, #3a5701,#1b2b00);      /* מגדיר רקע עם מעבר צבע ליניארי מלמעלה למטה */
+    padding-bottom: 20px;     /* מוסיף רווח תחתון של 20px */
+}
+
+.main-text {
+    max-width: 70%;     /* מגביל את הרוחב ל-70% מרוחב ההורה */
+    margin: 40px auto;     /* ממקם את האלמנט במרכז אופקית ומוסיף רווח אנכי */
+    padding: 40px 100px;     /* מוסיף רווח פנימי מלמעלה ולמטה (40px) ומהצדדים (100px) */
+    border: 2px solid #ccc;     /* מגדיר גבול אפור בעובי 2px */
+    border-radius: 8px;      /* מעגל את פינות הקופסה ב-8px */
+    background-color: #388E3C;     /* מגדיר רקע בצבע ירוק כהה */
+    color: white;     /* מגדיר צבע טקסט לבן */
+    text-align: center;     /* ממרכז את הטקסט */
+    direction: rtl;     /* מגדיר כיוון טקסט מימין לשמאל */
+    line-height: 1.8;     /* מגדיל את המרווח בין השורות */
+    font-size: 1.1rem;     /* מגדיר גודל גופן של 1.1rem */
+}
+
+.main-text li {
+    margin-bottom: 8px;     /* מוסיף רווח תחתון של 8px בין פריטי הרשימה */
+    text-indent: 0;     /* מבטל כניסת טקסט בתחילת שורה */
+}
+
+.main-text ul {
+    list-style: none;     /* מבטל את סמני הרשימה (כדורים או מספרים) */
+    padding-left: 0;     /* מבטל רווח פנימי בצד שמאל */
+    margin: 0;     /* מבטל רווח חיצוני */
+}
+.main-text h1 {
+    margin-bottom: 20px;     /* מוסיף רווח תחתון של 20px לכותרת */
+    font-size: 2rem;     /* מגדיר גודל גופן של 2rem */
+    text-align: center;     /* ממרכז את הכותרת */
+}
+
+.team {
+    max-width: 70%;     /* מגביל את הרוחב ל-70% מרוחב ההורה */
+    margin: 20px auto;      /* ממקם את האלמנט במרכז אופקית ומוסיף רווח אנכי */
+}
+
+.team .row {
+    margin-bottom: 20px;     /* מוסיף רווח תחתון של 20px בין השורות */
+    border: 2px solid #ccc;     /* מגדיר גבול אפור בעובי 2px */
+    border-radius: 8px;     /* מעגל את פינות הקופסה ב-8px */
+    padding: 10px;     /* מוסיף רווח פנימי של 10px */
+    background-color: #81C784;    /* מגדיר רקע בצבע ירוק בהיר */
+}
+
+.team img {
+    max-width: 85%;     /* מגביל את רוחב התמונה ל-85% מהרוחב הזמין */
+    height: auto;     /* שומר על פרופורציות התמונה */
+    border-radius: 8px;     /* מעגל את פינות התמונה */
+}
+
+.team .col-md-6 {
+    display: flex;     /* הופך את האלמנט למיכל גמיש */
+    direction: rtl;     /* מגדיר כיוון טקסט מימין לשמאל */
+    flex-direction: column;     /* מסדר את הפריטים בעמודה */
+    align-items: center;     /* ממרכז פריטים אופקית */
+    justify-content: center;     /* ממרכז פריטים אנכית */
+    padding: 15px;     /* מוסיף רווח פנימי של 15px */
+    color: white;     /* מגדיר צבע טקסט לבן */
+}
+
+.team h5 {
+    margin-bottom: 10px;     /* מוסיף רווח תחתון של 10px לכותרות */
+    text-align: center;     /* ממרכז את הכותרות */
+    font-size: 1.25rem;     /* מגדיר גודל גופן של 1.25rem */
+}
